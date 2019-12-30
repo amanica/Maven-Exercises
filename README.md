@@ -203,7 +203,7 @@ Make the following changes to the test file `AppTest.java`:
  * Add the `@Test` annotation above the `testApp()` method.
  * Replace `assertTrue(true);` with `Assert.assertTrue(true);`.
 
-Then update your `pom.xml` to use `junit:4.12` and use your IDE to add the missing imports in test `App.java`.
+Then update your `pom.xml` to use `junit:4.13` and use your IDE to add the missing imports in test `App.java`.
 
 Now run `mvn clean test` to make sure your changes are working.  
 
