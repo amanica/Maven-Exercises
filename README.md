@@ -192,8 +192,8 @@ patterns:
  * `**/*TestCase.java`
 
 Junit 3 is the default included in the project dependencies when you use an archetype to generate a Maven project, but
-it's ancient and version 4's syntax is much more concise - let's upgrade our project to the latest version of JUnit
-(`junit:4.12`).
+it's ancient and version 4's syntax is much more concise - let's upgrade our project to the latest version of JUnit 4
+(`junit:4.13-rc-2`) since upgrading to JUnit 5 is more involved.
 
 Make the following changes to the test file `AppTest.java`:
  * Remove all import statements.
@@ -202,7 +202,7 @@ Make the following changes to the test file `AppTest.java`:
  * Remove the static method `suite`.
  * Replace `assertTrue(true);` with `Assert.assertTrue(true);`.
 
-Then update your `pom.xml` to use `junit:4.12` and use your IDE to add the missing imports in test `App.java`.
+Then update your `pom.xml` to use `junit:4.13-rc-2` and use your IDE to add the missing imports in test `App.java`.
 
 Now run `mvn clean test` to make sure your changes are working.  
 
