@@ -192,8 +192,8 @@ patterns:
  * `**/*TestCase.java`
 
 Junit 3 is the default included in the project dependencies when you use an archetype to generate a Maven project, but
-it's ancient and version 4's syntax is much more concise - let's upgrade our project to the latest version of JUnit
-(`junit:4.12`).
+it's ancient and version 4's syntax is much more concise - let's upgrade our project to the latest version of JUnit 4
+(`junit:4.13`) since upgrading to JUnit 5 is a bit more involved.
 
 Make the following changes to the test file `AppTest.java`:
  * Remove all import statements.
