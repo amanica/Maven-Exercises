@@ -504,6 +504,6 @@ Create `web/src/main/resources/logback.xml`:
 If all went well you should now be able to build and run your web application:
  * `mvn clean install`
  * `mvn tomcat:run`
- * Then visit: http://locahost:8080/web/
+ * Then visit: http://localhost:8080/web/
 
 Exercise: `git checkout answer4`
