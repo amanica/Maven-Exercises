@@ -202,10 +202,11 @@ Make the following changes to the test file `AppTest.java`:
  * Remove the static method `suite`.
  * Add the `@Test` annotation above the `testApp()` method.
  * Replace `assertTrue(true);` with `Assert.assertTrue(true);`.
+ * Add @Test on testApp()
 
 Then update your `pom.xml` to use `junit:4.13-rc-2` and use your IDE to add the missing imports in test `App.java`.
 
-Now run `mvn clean test` to make sure your changes are working.  
+Now run `mvn clean test` to make sure your changes are working and that the test is running.  
 
 Answer: `git checkout answer3`
 
