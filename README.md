@@ -235,11 +235,10 @@ mvn -B archetype:generate \
 ```
 
 Now make the following changes to the generated module's `pom.xml`:
- * Remove the redundant `<groupId>` (inherited from parent project).
- * Update the version to `1.0.0-SNAPSHOT` to be consistent with the parent project.
- * Add `<packaging>jar</packaging>`.
+ * Remove the redundant `<groupId>` and  `<version>` (inherited from parent project) - don't delete it from the parent section!
  * Remove `<version>` from your JUnit dependency.
 
+Delete the generated java directories
 Now move the code from `src/main/java/` and `src/test/java` in your parent project into the new module.
 
 Now make the following changes to your parent `pom.xml`:
@@ -260,8 +259,7 @@ mvn archetype:generate \
 ```
 
 Now make the following changes to the generated module's `pom.xml`:
- * Remove the redundant `<groupId>` (inherited from parent project).
- * Update the version to `1.0.0-SNAPSHOT` to be consistent with the parent project.
+ * Remove the redundant `<groupId>` and  `<version>` (inherited from parent project) - don't delete it from the parent section!
  * Remove `<version>` from your JUnit dependency.
 
 Edit your generated `web.xml` to upgrade to servlet 3.0:
